@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Radiohead</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a class="logo" href="#">Radiohead</a>
+
+      <nav class="nav">
+        <a href="#about">О группе</a>
+        <a href="#members">Участники</a>
+        <a href="#albums">Альбомы</a>
+        <a href="#facts" id="nav-facts">Факты</a>
+      </nav>
+
+      <button class="theme-btn" id="theme-btn" type="button">Тёмная тема</button>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="container hero-inner">
+        <div>
+          <p class="hero-place">Оксфордшир, Англия · с 1985 года</p>
+          <h1>Radiohead</h1>
+          <p class="hero-text">
+            Британская рок-группа, которая за несколько десятилетий прошла путь
+            от гитарного альтернативного рока до электроники и оркестровых аранжировок.
+          </p>
+          <button class="btn" id="show-facts" type="button">Показать факты</button>
+        </div>
+
+        <img class="hero-img" src="images/band.jpg" alt="Участники группы Radiohead">
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container text-block">
+        <h2>О группе</h2>
+        <p>
+          Radiohead появились в городе Абингдон недалеко от Оксфорда. Будущие участники
+          учились в одной школе и в 1985 году начали играть вместе под названием On a Friday:
+          по пятницам у них были репетиции. В начале 1990-х группа подписала контракт
+          с лейблом EMI и сменила название на Radiohead, взяв его из песни Talking Heads.
+        </p>
+        <p>
+          Первую широкую известность принёс сингл "Creep" с дебютного альбома Pablo Honey (1993).
+          Но настоящее признание пришло позже: альбомы The Bends и особенно OK Computer
+          сделали Radiohead одной из самых обсуждаемых групп конца 1990-х.
+        </p>
+        <p>
+          Группа почти не повторяет саму себя: после гитарных пластинок
+          вышли электронные Kid A и Amnesiac, а альбом In Rainbows в 2007 году выпустили
+          в интернете по принципу "заплатите, сколько хотите". Состав группы не менялся
+          с самого начала, а в 2019 году Radiohead включили в Зал славы рок-н-ролла.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="members">
+      <div class="container">
+        <h2>Участники</h2>
+        <div class="members">
+
+          <div class="card member">
+            <h3>Том Йорк</h3>
+            <p class="role">Вокал, гитара, клавишные</p>
+            <button class="more-btn" type="button">Подробнее</button>
+            <p class="more" hidden>Главный автор текстов и голос группы. Выпускает сольные альбомы, играл в проекте Atoms for Peace, а позже вместе с Джонни Гринвудом основал группу The Smile.</p>
+          </div>
+
+          <div class="card member">
+            <h3>Джонни Гринвуд</h3>
+            <p class="role">Гитара, клавишные, другие инструменты</p>
+            <button class="more-btn" type="button">Подробнее</button>
+            <p class="more" hidden>Самый младший участник и мультиинструменталист. Отвечает за многие оркестровые аранжировки группы и пишет музыку к фильмам, например к "Нефти" Пола Томаса Андерсона.</p>
+          </div>
+
+          <div class="card member">
+            <h3>Колин Гринвуд</h3>
+            <p class="role">Бас-гитара</p>
+            <button class="more-btn" type="button">Подробнее</button>
+            <p class="more" hidden>Старший брат Джонни. Один из основателей группы, учился в той же школе, что и остальные. Его басовые партии лежат в основе многих песен Radiohead.</p>
+          </div>
+
+          <div class="card member">
+            <h3>Эд О'Брайен</h3>
+            <p class="role">Гитара, бэк-вокал</p>
+            <button class="more-btn" type="button">Подробнее</button>
+            <p class="more" hidden>Известен гитарой с кучей эффектов, из-за которых она часто звучит скорее как синтезатор. В 2020 году выпустил сольный альбом под именем EOB.</p>
+          </div>
+
+          <div class="card member">
+            <h3>Фил Селуэй</h3>
+            <p class="role">Ударные</p>
+            <button class="more-btn" type="button">Подробнее</button>
+            <p class="more" hidden>Барабанщик группы с самого начала. Помимо Radiohead выпускает сольные альбомы, где сам и поёт.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="albums">
+      <div class="container">
+        <h2>Альбомы</h2>
+
+        <div class="card album">
+          <img class="album-img" id="album-img" src="images/albom_01.jpg" alt="Обложка альбома Pablo Honey">
+
+          <div>
+            <p class="album-counter" id="album-counter">1 / 9</p>
+            <h3 class="album-title" id="album-title">Pablo Honey</h3>
+            <p class="album-year" id="album-year">1993</p>
+            <p class="album-text" id="album-text"></p>
+
+            <div class="album-buttons">
+              <button class="btn btn-light" id="prev-album" type="button">← Предыдущий</button>
+              <button class="btn" id="next-album" type="button">Следующий →</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="facts" hidden>
+      <div class="container text-block">
+        <h2>Интересные факты</h2>
+        <div class="fact">
+          <p class="fact-number" id="fact-number">Факт 1</p>
+          <p class="fact-text" id="fact-text"></p>
+        </div>
+        <button class="btn" id="next-fact" type="button">Ещё факт</button>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-links">
+        <a href="https://www.radiohead.com" target="_blank" rel="noopener">Официальный сайт radiohead.com</a>
+        <a href="https://ru.wikipedia.org/wiki/Radiohead" target="_blank" rel="noopener">Статья в Википедии</a>
+      </p>
+      <p>Сайт сделан студентами группы 24КНТ-1: Артём Малаев, Темирлан Койбаев, Глеб Лазутин, Максим Касимов.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
